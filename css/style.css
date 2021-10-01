@@ -1,9 +1,19 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Lato, sans-serif;
+}
+
+/* ------------------------------- Header ------------------------------- */
+.header {
+    padding: 15px 0;
+}
+
 .navigation {
     list-style: none;
 }
 
 .navigation__link {
-    font-family: Lato, sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
@@ -18,30 +28,190 @@
     text-decoration: underline;
 }
 
-.cart__btn {
-    padding: 10px 20px 10px 50px;
+.button {
+    padding: 10px 25px;
     background: #4592FF;
     border-radius: 20px;
     text-decoration: none;
     position: relative;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.cart__btn::before {
-    content: '';
-    background-image: url("../img/Cart.svg");
-    position: absolute;
-    width: 18px;
-    height: 17px;
-    left: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.cart__btn span {
-    font-family: Lato;
+.button__text {
     font-style: normal;
     font-weight: 900;
     font-size: 14px;
     line-height: 20px;
     color: #FFFFFF;
 }
+
+.button__price {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.button__icon + .button__text, .button__text + .button__icon, .button__price + .button__text {
+    margin-left: 10px;
+}
+
+.cart__btn {
+    padding: 10px 20px;
+}
+
+.icon__cart {
+    background: url("../img/Cart.svg") center center no-repeat;
+    width: 18px;
+    height: 17px;
+}
+
+.icon__arrow {
+    background: url("../img/Arrow.svg") center center no-repeat;
+    width: 15px;
+    height: 7px;
+}
+/* ------------------------------- Header ------------------------------- */
+
+/* ------------------------------- Slider ------------------------------- */
+.slider {
+    position: relative;
+}
+
+.slide {
+    padding: 90px 0 110px;
+}
+
+.slide_1 {
+    background: #B4D1E0 url("../img/slide.png") right center/contain no-repeat;
+}
+
+.label {
+    background: #3DC47E;
+    border-radius: 3px;
+    padding: 5px 12px;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.slide__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 55px;
+    line-height: 70px;
+    color: #262D33;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.slide__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 30px;
+    color: #4B5157;
+    margin-bottom: 40px;
+    max-width: 335px;
+}
+
+.slider__nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider__button {
+    background: transparent;
+    border: none;
+    outline: none;
+    opacity: .4;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.slider__button:hover {
+    opacity: 1;
+}
+/* ------------------------------- Slider ------------------------------- */
+
+/* ------------------------------- Promotion ------------------------------- */
+.promotion {
+    margin-top: 50px;
+}
+
+.promotion__item {
+    text-decoration: none;
+    min-height: 290px;
+    display: inline-block;
+    background: #CCD5E6;
+    border-radius: 10px;
+    padding-top: 60px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.promotion__item:hover .button {
+    box-shadow: 0 0 10px #AAA;
+}
+
+.promotion__title {
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    color: #262D33;
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-left: 45px;
+    width: 40%;
+}
+
+.promotion__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
+    margin-top: 0;
+    margin-bottom: 25px;
+    margin-left: 45px;
+    width: 40%;
+}
+
+.promotion__item .button {
+    margin-left: 45px;
+}
+
+.promotion .item__first {
+    background: url("../img/promotion_1.png") right center/cover no-repeat;
+}
+
+.promotion .item__second {
+    background: url("../img/promotion_2.png") center center/cover no-repeat;
+}
+
+.promotion .item__third {
+    background: #CCD5E6 url("../img/promotion_3.png") right center/contain no-repeat;
+}
+
+.promotion .item__fourth {
+    background: #FF4F52 url("../img/promotion_4.png") right center/contain no-repeat;
+}
+
+.item__second .promotion__title, .item__second .promotion__desc,
+.item__fourth .promotion__title, .item__fourth .promotion__desc {
+    color: #FFF;
+}
+/* ------------------------------- Promotion ------------------------------- */
