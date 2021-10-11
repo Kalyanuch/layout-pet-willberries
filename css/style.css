@@ -358,3 +358,96 @@ body {
     color: #262D33;
 }
 /* ------------------------------- New arrival ------------------------------- */
+
+/* ------------------------------- Footer ------------------------------- */
+.footer {
+    background: #8F79D4;
+    margin-top: 70px;
+}
+
+.footer .row {
+    padding: 45px 0;
+}
+
+.footer hr {
+    color: rgba(255,255,255,.5);
+    margin: 0;
+    padding: 0;
+}
+
+.footer__menu ul, .footer__social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__menu_item + .footer__menu_item {
+    margin-left: 40px;
+}
+
+.footer__menu_link {
+    text-decoration: none;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+}
+
+.footer__menu_link:hover {
+    text-shadow: #EEE 1px 1px;
+}
+
+.footer__social_title {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #E7D9FF;
+    margin-right: 30px;
+
+}
+
+.footer__social_item + .footer__social_item {
+    margin-left: 20px;
+}
+
+.footer__copyright {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #E7D9FF;
+}
+
+.footer__payment + .footer__payment {
+    margin-left: 25px;
+}
+
+.footer__top_text {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFFFFF;
+    margin-right: 15px;
+}
+
+.footer__top_button {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: solid 1px #D8BFFF;
+    border-radius: 50%;
+    background: url("../img/Arrow.png") center center no-repeat;
+    opacity: .6;
+}
+
+.footer__top_button:hover {
+    opacity: 1;
+}
+/* ------------------------------- Footer ------------------------------- */
