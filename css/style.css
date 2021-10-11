@@ -4,6 +4,10 @@ body {
     font-family: Lato, sans-serif;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* ------------------------------- Header ------------------------------- */
 .header {
     padding: 15px 0;
@@ -152,7 +156,7 @@ body {
 
 .promotion__item {
     text-decoration: none;
-    min-height: 290px;
+    min-height: 370px;
     display: inline-block;
     background: #CCD5E6;
     border-radius: 10px;
@@ -203,15 +207,77 @@ body {
 }
 
 .promotion .item__third {
-    background: #CCD5E6 url("../img/promotion_3.png") right center/contain no-repeat;
+    background: #CCD5E6 url("../img/promotion_3.png") right 15% center/contain no-repeat;
+    padding-top: 35px;
+    padding-left: 48px;
 }
 
 .promotion .item__fourth {
     background: #FF4F52 url("../img/promotion_4.png") right center/contain no-repeat;
+    padding-top: 35px;
+    padding-left: 25px;
 }
 
 .item__second .promotion__title, .item__second .promotion__desc,
 .item__fourth .promotion__title, .item__fourth .promotion__desc {
+    color: #FFF;
+}
+
+.promotion .item__third .promotion__title {
+    margin-left: 0;
+    width: 40%;
+    margin-top: 30px;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    color: #262D33;
+}
+
+.promotion .item__third .promotion__desc {
+    margin-left: 0;
+    width: 40%;
+    margin-top: 20px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #4B5157;
+}
+
+.promotion .item__third .button {
+    margin-left: 0;
+}
+
+.promotion .item__fourth .promotion__title {
+    margin-left: 0;
+    width: 60%;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+}
+
+.promotion .item__fourth .promotion__desc {
+    margin-left: 0;
+    width: 60%;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #FFC4C9;
+}
+
+.card__price {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 14px;
+    line-height: 20px;
     color: #FFF;
 }
 /* ------------------------------- Promotion ------------------------------- */
