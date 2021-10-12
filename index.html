@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -53,32 +54,79 @@
         </div>
         <!-- /.row -->
     </header>
-    <div class="slider">
-        <section class="slide slide_1">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4 offset-1">
-                        <span class="label">Bestseller</span>
-                        <h2 class="slide__title">Sweater Choker Neck</h2>
-                        <p class="slide__desc">Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.</p>
-                        <button class="button" type="button">
-                            <span class="button__price">$319</span>
-                            <span class="button__text">Shop now</span>
-                        </button>
+    <div class="slider swiper">
+        <div class="swiper-wrapper">
+            <section class="slide slide_1 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 offset-1">
+                            <span class="label">Bestseller</span>
+                            <h2 class="slide__title">Sweater Choker Neck1</h2>
+                            <p class="slide__desc">Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.</p>
+                            <button class="button" type="button">
+                                <span class="button__price">$319</span>
+                                <span class="button__text">Shop now</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <section class="slide slide_2 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 offset-1">
+                            <span class="label">Bestseller</span>
+                            <h2 class="slide__title">Sweater Choker Neck2</h2>
+                            <p class="slide__desc">Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.</p>
+                            <button class="button" type="button">
+                                <span class="button__price">$319</span>
+                                <span class="button__text">Shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide_3 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 offset-1">
+                            <span class="label">Bestseller</span>
+                            <h2 class="slide__title">Sweater Choker Neck3</h2>
+                            <p class="slide__desc">Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.</p>
+                            <button class="button" type="button">
+                                <span class="button__price">$319</span>
+                                <span class="button__text">Shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="slide slide_4 swiper-slide">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4 offset-1">
+                            <span class="label">Bestseller</span>
+                            <h2 class="slide__title">Sweater Choker Neck4</h2>
+                            <p class="slide__desc">Women’s pearl basic knit sweater with a round neck. Available in several colours. Free shipping to stores.</p>
+                            <button class="button" type="button">
+                                <span class="button__price">$319</span>
+                                <span class="button__text">Shop now</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
         <div class="slider__nav">
             <div class="container">
                 <div class="row d-flex justify-content-between">
                     <div class="col-1">
-                        <button class="slider__button prev">
+                        <button class="slider__button prev slider-button-prev">
                             <img src="img/arrow_prev.png" alt="">
                         </button>
                     </div>
                     <div class="col-1">
-                        <button class="slider__button next">
+                        <button class="slider__button next slider-button-next">
                             <img src="img/arrow_next.png" alt="">
                         </button>
                     </div>
@@ -282,5 +330,8 @@
         </div>
     </div>
     <!-- /.footer -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
