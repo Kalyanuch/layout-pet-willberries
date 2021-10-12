@@ -465,3 +465,37 @@ body {
     opacity: 1;
 }
 /* ------------------------------- Footer ------------------------------- */
+
+@media (max-width: 1200px) {
+    .slide {
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .promotion .item__third .promotion__title, .promotion .item__third .promotion__desc {
+        width: 100%;
+    }
+
+    .promotion .item__third {
+        background-size: cover;
+    }
+}
+
+@media (max-width: 992px) {
+    .slider__nav { display: none;}
+    .slide__desc {color: #000; }
+
+}
+
+@media (max-width: 768px) {
+    .slide__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .promotion .item__first, .promotion .item__second {
+        background-position: left top;
+    }
+
+    .footer__payment { display: none; }
+}
